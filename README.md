@@ -128,8 +128,8 @@ Developer Contribution Footprint: Contributor distribution tracking direct code 
 ⚙️ How to Reproduce Locally
 1. Clone Repository & Setup Environment
 Bash
-git clone [https://github.com/USERNAME/NAMA_REPO_KAMU.git](https://github.com/USERNAME/NAMA_REPO_KAMU.git)
-cd NAMA_REPO_KAMU
+git clone [[https://github.com/USERNAME/NAMA_REPO_KAMU.git](https://github.com/USERNAME/NAMA_REPO_KAMU.git](https://github.com/ChenStormtout/github-elt-pipeline-dbt-bigquery.git))
+cd github-elt-pipeline-dbt-bigquery
 
 python -m venv .venv
 # On Windows PowerShell:
@@ -153,8 +153,6 @@ dbt test
 Bash
 python ../scripts/audit_gold.py
 👤 Author
-Portfolio Project by: [Nama Kamu]
+Portfolio Project by: Dewa Setya
 
-LinkedIn: [Link LinkedIn Kamu]
 
-GitHub: [Link GitHub Kamu]
