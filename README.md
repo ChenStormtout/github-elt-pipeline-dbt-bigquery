@@ -37,7 +37,7 @@ Data Quality & Testing: dbt generic test suites (unique, not_null, relationships
 Business Intelligence / BI: Google Looker Studio.
 
 Version Control & CI/CD: Git, GitHub.
-
+```text
 📂 Repository Structure
 Plaintext
 porto-data-engineer_1/
@@ -68,6 +68,8 @@ porto-data-engineer_1/
 ├── .gitignore                       # Security rules (GCP keys & env ignore)
 ├── requirements.txt                 # Python dependencies
 └── README.md                        # Project documentation
+
+```
 🔄 Data Pipeline Breakdown (Medallion Architecture)
 1. Bronze Layer (data_bronze)
 Raw Storage: Ingests raw JSON responses directly from GitHub REST API endpoints (/repos, /commits, /pulls).
