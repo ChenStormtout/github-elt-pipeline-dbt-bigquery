@@ -1,0 +1,14 @@
+# Service account GCP & Secret keys
+*.json
+*.env
+credentials/
+
+# Virtual Environment
+.venv/
+venv/
+__pycache__/
+
+# dbt artifacts
+dbt_github/target/
+dbt_github/dbt_packages/
+dbt_github/logs/

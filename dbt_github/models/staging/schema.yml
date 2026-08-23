@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: stg_repositories
+    description: "Tabel repositori bersih"
+    columns:
+      - name: repo_id
+        tests:
+          - unique
+          - not_null
+      - name: full_name
+        tests:
+          - not_null
+
+  - name: stg_commits
+    description: "Tabel commits bersih"
+    columns:
+      - name: commit_sha
+        tests:
+          - unique
+          - not_null
+      - name: repo_name
+        tests:
+          - not_null
+
+  - name: stg_pull_requests
+    description: "Tabel pull requests bersih"
+    columns:
+      - name: pr_id
+        tests:
+          - unique
+          - not_null
+      - name: state
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['open', 'closed']

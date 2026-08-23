@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: dim_repositories
+    description: "Tabel dimensi repositori"
+    columns:
+      - name: repo_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_authors
+    description: "Tabel dimensi kontributor dan developer"
+    columns:
+      - name: author_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_commits
+    description: "Tabel fakta commit"
+    columns:
+      - name: commit_sha
+        tests:
+          - unique
+          - not_null
+      - name: repo_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_repositories')
+              field: repo_id
+
+  - name: fct_pull_requests
+    description: "Tabel fakta pull request"
+    columns:
+      - name: pr_id
+        tests:
+          - unique
+          - not_null
+      - name: repo_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_repositories')
+              field: repo_id
+
+  - name: mart_repository_overview
+    description: "Tabel ringkasan metrik analitik repositori untuk dashboard"
+    columns:
+      - name: repo_id
+        tests:
+          - unique
+          - not_null

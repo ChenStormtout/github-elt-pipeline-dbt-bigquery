@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bronze_github
+    database: data-engineer-gcp-506208
+    schema: data_bronze
+    tables:
+      - name: raw_repositories
+      - name: raw_commits
+      - name: raw_pull_requests

@@ -1,0 +1,360 @@
+[0m16:32:44.413192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D00F1EE510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0115D3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0115D3B10>]}
+
+
+============================== 16:32:44.426914 | fad78ec4-59f9-4f74-9041-151c2336724d ==============================
+[0m16:32:44.426914 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:32:44.427964 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init dbt_github', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m16:32:44.481515 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ACER\.dbt
+[0m16:32:44.484249 [debug] [MainThread]: Starter project path: C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\include\starter_project
+[0m16:32:44.496768 [info ] [MainThread]: Setting up your profile.
+[0m16:33:28.266386 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+list index out of range
+[0m16:33:28.284422 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\task\init.py", line 363, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\task\init.py", line 265, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\task\init.py", line 182, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\task\init.py", line 166, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\task\init.py", line 117, in generate_target_from_input
+    choice = option_list[numeric_choice - 1]
+             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m16:33:28.285666 [debug] [MainThread]: Command `dbt init` failed at 16:33:28.285551 after 44.16 seconds
+[0m16:33:28.285991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D032AB49D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D032A9D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D032A4A690>]}
+[0m16:33:28.286372 [debug] [MainThread]: Flushing usage events
+[0m16:33:29.574515 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:33:36.685314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B402E510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B64D3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B64D3B10>]}
+
+
+============================== 16:33:36.688609 | 44079d02-7750-4650-9cc7-477574457eb4 ==============================
+[0m16:33:36.688609 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:33:36.689107 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init dbt_github', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:33:36.699395 [info ] [MainThread]: A project called dbt_github already exists here.
+[0m16:33:36.700014 [debug] [MainThread]: Command `dbt init` succeeded at 16:33:36.699924 after 0.13 seconds
+[0m16:33:36.700290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B652DF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B6377890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B65259D0>]}
+[0m16:33:36.700545 [debug] [MainThread]: Flushing usage events
+[0m16:33:37.941340 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:34:18.046946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A3DCF2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A400D3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A400D3B10>]}
+
+
+============================== 16:34:18.050656 | b009d21a-f3bf-4509-bda5-4932d6caaf5a ==============================
+[0m16:34:18.050656 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:34:18.051258 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init dbt_github', 'log_path': 'logs'}
+[0m16:34:18.061914 [debug] [MainThread]: Starter project path: C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\include\starter_project
+[0m16:34:18.074598 [info ] [MainThread]: Setting up your profile.
+[0m16:37:27.105429 [info ] [MainThread]: Profile dbt_github written to C:\Users\ACER\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:37:27.114018 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:37:27.115129 [info ] [MainThread]: dbt version: 1.12.3
+[0m16:37:27.115889 [info ] [MainThread]: python version: 3.13.14
+[0m16:37:27.116460 [info ] [MainThread]: python path: C:\porto-data-engineer_1\.venv\Scripts\python.exe
+[0m16:37:27.117144 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:37:27.167227 [info ] [MainThread]: Using profiles dir at C:\Users\ACER\.dbt
+[0m16:37:27.167852 [info ] [MainThread]: Using profiles.yml file at C:\Users\ACER\.dbt\profiles.yml
+[0m16:37:27.168338 [info ] [MainThread]: Using dbt_project.yml file at C:\porto-data-engineer_1\dbt_github\dbt_project.yml
+[0m16:37:27.168879 [info ] [MainThread]: adapter type: bigquery
+[0m16:37:27.169320 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:37:27.270604 [info ] [MainThread]: Configuration:
+[0m16:37:27.271299 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:37:27.272055 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:37:27.272571 [info ] [MainThread]: Required dependencies:
+[0m16:37:27.273063 [debug] [MainThread]: Executing "git --help"
+[0m16:37:27.277365 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:37:27.277815 [info ] [MainThread]: Connection:
+[0m16:37:27.278242 [info ] [MainThread]:   method: service-account
+[0m16:37:27.278797 [info ] [MainThread]:   database: data-engineer-gcp-506208
+[0m16:37:27.279077 [info ] [MainThread]:   execution_project: data-engineer-gcp-506208
+[0m16:37:27.279317 [info ] [MainThread]:   schema: data_silver
+[0m16:37:27.279633 [info ] [MainThread]:   location: US
+[0m16:37:27.279985 [info ] [MainThread]:   priority: interactive
+[0m16:37:27.280307 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:37:27.280598 [info ] [MainThread]:   reservation: None
+[0m16:37:27.280910 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:37:27.281219 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:37:27.281653 [info ] [MainThread]:   job_retries: 1
+[0m16:37:27.281958 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:37:27.282261 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:37:27.282580 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:37:27.282948 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:37:27.283219 [info ] [MainThread]:   client_id: None
+[0m16:37:27.283463 [info ] [MainThread]:   token_uri: None
+[0m16:37:27.283693 [info ] [MainThread]:   compute_region: None
+[0m16:37:27.283968 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:37:27.284241 [info ] [MainThread]:   gcs_bucket: None
+[0m16:37:27.284500 [info ] [MainThread]:   dataproc_batch: None
+[0m16:37:27.284986 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:37:27.575496 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:37:27.575834 [debug] [MainThread]: On debug: select 1 as id
+[0m16:37:27.576104 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:37:27.576416 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\porto-data-engineer_1\\gcp-key.json''
+[0m16:37:27.576722 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:37:27.576917 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\porto-data-engineer_1\\gcp-key.json'
+[0m16:37:27.577105 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:37:27.577595 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:37:27.578065 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:37:27.578506 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:37:27.578992 [info ] [MainThread]: Your new dbt project "dbt_github" was created!
+Initialized new project in C:\porto-data-engineer_1\dbt_github\dbt_github
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:37:27.579417 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m16:37:27.580417 [debug] [MainThread]: Command `dbt init` succeeded at 16:37:27.580322 after 189.70 seconds
+[0m16:37:27.580677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A62757E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A6278E7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A62934160>]}
+[0m16:37:27.581229 [debug] [MainThread]: Flushing usage events
+[0m16:37:28.874668 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:38:45.745141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C87F2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210CABD3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210CABD3B10>]}
+
+
+============================== 16:38:45.748938 | 245ef742-1c46-4ca8-8c67-3df011e74604 ==============================
+[0m16:38:45.748938 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:38:45.749706 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m16:38:45.761494 [info ] [MainThread]: dbt version: 1.12.3
+[0m16:38:45.761910 [info ] [MainThread]: python version: 3.13.14
+[0m16:38:45.762255 [info ] [MainThread]: python path: C:\porto-data-engineer_1\.venv\Scripts\python.exe
+[0m16:38:45.762644 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:38:46.421096 [info ] [MainThread]: Using profiles dir at C:\Users\ACER\.dbt
+[0m16:38:46.421667 [info ] [MainThread]: Using profiles.yml file at C:\Users\ACER\.dbt\profiles.yml
+[0m16:38:46.422315 [info ] [MainThread]: Using dbt_project.yml file at C:\porto-data-engineer_1\dbt_project.yml
+[0m16:38:46.422799 [info ] [MainThread]: adapter type: bigquery
+[0m16:38:46.423156 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:38:46.423627 [info ] [MainThread]: Configuration:
+[0m16:38:46.423942 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:38:46.424247 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:38:46.424618 [info ] [MainThread]: Required dependencies:
+[0m16:38:46.424932 [debug] [MainThread]: Executing "git --help"
+[0m16:38:46.429279 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:38:46.429867 [info ] [MainThread]: Connection:
+[0m16:38:46.430311 [info ] [MainThread]:   method: service-account
+[0m16:38:46.430798 [info ] [MainThread]:   database: data-engineer-gcp-506208
+[0m16:38:46.431179 [info ] [MainThread]:   execution_project: data-engineer-gcp-506208
+[0m16:38:46.431601 [info ] [MainThread]:   schema: data_silver
+[0m16:38:46.431961 [info ] [MainThread]:   location: US
+[0m16:38:46.432252 [info ] [MainThread]:   priority: interactive
+[0m16:38:46.432561 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:38:46.432859 [info ] [MainThread]:   reservation: None
+[0m16:38:46.433123 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:38:46.433377 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:38:46.433648 [info ] [MainThread]:   job_retries: 1
+[0m16:38:46.433886 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:38:46.434127 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:38:46.434358 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:38:46.434594 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:38:46.434844 [info ] [MainThread]:   client_id: None
+[0m16:38:46.435060 [info ] [MainThread]:   token_uri: None
+[0m16:38:46.435262 [info ] [MainThread]:   compute_region: None
+[0m16:38:46.435463 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:38:46.435718 [info ] [MainThread]:   gcs_bucket: None
+[0m16:38:46.435996 [info ] [MainThread]:   dataproc_batch: None
+[0m16:38:46.436509 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:38:46.708741 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:38:46.709104 [debug] [MainThread]: On debug: select 1 as id
+[0m16:38:46.709378 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:38:46.709718 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\porto-data-engineer_1\\gcp-key.json''
+[0m16:38:46.709980 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:38:46.710174 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\porto-data-engineer_1\\gcp-key.json'
+[0m16:38:46.710384 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:38:46.710813 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m16:38:46.711182 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\porto-data-engineer_1\dbt_project.yml> not found
+
+[0m16:38:46.711444 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:38:46.711686 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:38:46.712397 [debug] [MainThread]: Command `dbt debug` failed at 16:38:46.712307 after 1.30 seconds
+[0m16:38:46.712664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210ED17B490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210ED16B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210ED328380>]}
+[0m16:38:46.712935 [debug] [MainThread]: Flushing usage events
+[0m16:38:48.018787 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:44.477049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025033AF2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025035ED3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025035ED3B10>]}
+
+
+============================== 16:40:44.480256 | 2322c0cd-33ac-448b-960b-2b6e0c34a06f ==============================
+[0m16:40:44.480256 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:40:44.480781 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init dbt_github', 'log_path': 'logs'}
+[0m16:40:44.492076 [debug] [MainThread]: Starter project path: C:\porto-data-engineer_1\.venv\Lib\site-packages\dbt\include\starter_project
+[0m16:40:44.504788 [info ] [MainThread]: Setting up your profile.
+[0m16:42:27.501424 [info ] [MainThread]: Profile dbt_github written to C:\Users\ACER\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:42:27.504149 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:42:27.504920 [info ] [MainThread]: dbt version: 1.12.3
+[0m16:42:27.505349 [info ] [MainThread]: python version: 3.13.14
+[0m16:42:27.505715 [info ] [MainThread]: python path: C:\porto-data-engineer_1\.venv\Scripts\python.exe
+[0m16:42:27.506033 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:42:27.553821 [info ] [MainThread]: Using profiles dir at C:\Users\ACER\.dbt
+[0m16:42:27.554471 [info ] [MainThread]: Using profiles.yml file at C:\Users\ACER\.dbt\profiles.yml
+[0m16:42:27.554975 [info ] [MainThread]: Using dbt_project.yml file at C:\porto-data-engineer_1\dbt_github\dbt_project.yml
+[0m16:42:27.555465 [info ] [MainThread]: adapter type: bigquery
+[0m16:42:27.555932 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:42:27.635876 [info ] [MainThread]: Configuration:
+[0m16:42:27.636407 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:42:27.636957 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:42:27.637384 [info ] [MainThread]: Required dependencies:
+[0m16:42:27.637799 [debug] [MainThread]: Executing "git --help"
+[0m16:42:27.643271 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:42:27.643729 [info ] [MainThread]: Connection:
+[0m16:42:27.644081 [info ] [MainThread]:   method: service-account
+[0m16:42:27.644437 [info ] [MainThread]:   database: data-engineer-gcp-506208
+[0m16:42:27.644793 [info ] [MainThread]:   execution_project: data-engineer-gcp-506208
+[0m16:42:27.645186 [info ] [MainThread]:   schema: data_silver
+[0m16:42:27.645436 [info ] [MainThread]:   location: US
+[0m16:42:27.645660 [info ] [MainThread]:   priority: interactive
+[0m16:42:27.645867 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:42:27.646074 [info ] [MainThread]:   reservation: None
+[0m16:42:27.646393 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:42:27.646716 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:42:27.646997 [info ] [MainThread]:   job_retries: 1
+[0m16:42:27.647266 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:42:27.647511 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:42:27.647756 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:42:27.647988 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:42:27.648239 [info ] [MainThread]:   client_id: None
+[0m16:42:27.648502 [info ] [MainThread]:   token_uri: None
+[0m16:42:27.649221 [info ] [MainThread]:   compute_region: None
+[0m16:42:27.649636 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:42:27.650018 [info ] [MainThread]:   gcs_bucket: None
+[0m16:42:27.650317 [info ] [MainThread]:   dataproc_batch: None
+[0m16:42:27.650963 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:42:27.913526 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:42:27.913844 [debug] [MainThread]: On debug: select 1 as id
+[0m16:42:27.914112 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:42:30.605668 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-engineer-gcp-506208&j=bq:US:ca96b79e-abcf-4b25-b304-71aa7a6354ec&page=queryresults
+[0m16:42:31.013762 [debug] [MainThread]: SQL status: OK in 0.407 seconds
+[0m16:42:31.469960 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:42:31.471096 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:42:31.471942 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:42:31.473007 [info ] [MainThread]: Your new dbt project "dbt_github" was created!
+Initialized new project in C:\porto-data-engineer_1\dbt_github\dbt_github
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:42:31.473915 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m16:42:31.475722 [debug] [MainThread]: Command `dbt init` succeeded at 16:42:31.475425 after 107.22 seconds
+[0m16:42:31.476293 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:42:31.476830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025058474C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025035D77890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250584E7DF0>]}
+[0m16:42:31.477544 [debug] [MainThread]: Flushing usage events
+[0m16:42:32.773402 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:42:46.445919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172157EE510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017217BD3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017217BD3B10>]}
+
+
+============================== 16:42:46.449280 | 621b641f-5b3f-4f9b-8baf-6c70bbf46dc2 ==============================
+[0m16:42:46.449280 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:42:46.449783 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m16:42:46.460197 [info ] [MainThread]: dbt version: 1.12.3
+[0m16:42:46.460501 [info ] [MainThread]: python version: 3.13.14
+[0m16:42:46.461016 [info ] [MainThread]: python path: C:\porto-data-engineer_1\.venv\Scripts\python.exe
+[0m16:42:46.461291 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:42:47.088051 [info ] [MainThread]: Using profiles dir at C:\Users\ACER\.dbt
+[0m16:42:47.088586 [info ] [MainThread]: Using profiles.yml file at C:\Users\ACER\.dbt\profiles.yml
+[0m16:42:47.089006 [info ] [MainThread]: Using dbt_project.yml file at C:\porto-data-engineer_1\dbt_project.yml
+[0m16:42:47.089349 [info ] [MainThread]: adapter type: bigquery
+[0m16:42:47.089665 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:42:47.090035 [info ] [MainThread]: Configuration:
+[0m16:42:47.090358 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:42:47.090655 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:42:47.090938 [info ] [MainThread]: Required dependencies:
+[0m16:42:47.091359 [debug] [MainThread]: Executing "git --help"
+[0m16:42:47.096173 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:42:47.096648 [info ] [MainThread]: Connection:
+[0m16:42:47.097078 [info ] [MainThread]:   method: service-account
+[0m16:42:47.097520 [info ] [MainThread]:   database: data-engineer-gcp-506208
+[0m16:42:47.097857 [info ] [MainThread]:   execution_project: data-engineer-gcp-506208
+[0m16:42:47.098361 [info ] [MainThread]:   schema: data_silver
+[0m16:42:47.098697 [info ] [MainThread]:   location: US
+[0m16:42:47.099004 [info ] [MainThread]:   priority: interactive
+[0m16:42:47.099319 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:42:47.099612 [info ] [MainThread]:   reservation: None
+[0m16:42:47.099904 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:42:47.100227 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:42:47.100653 [info ] [MainThread]:   job_retries: 1
+[0m16:42:47.101372 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:42:47.101662 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:42:47.102157 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:42:47.103176 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:42:47.103516 [info ] [MainThread]:   client_id: None
+[0m16:42:47.103807 [info ] [MainThread]:   token_uri: None
+[0m16:42:47.104205 [info ] [MainThread]:   compute_region: None
+[0m16:42:47.105825 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:42:47.106623 [info ] [MainThread]:   gcs_bucket: None
+[0m16:42:47.106962 [info ] [MainThread]:   dataproc_batch: None
+[0m16:42:47.107653 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:42:47.374545 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:42:47.374874 [debug] [MainThread]: On debug: select 1 as id
+[0m16:42:47.375138 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:42:48.774540 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-engineer-gcp-506208&j=bq:US:599389a6-7ce9-45e4-8922-be70fd93d169&page=queryresults
+[0m16:42:49.164604 [debug] [MainThread]: SQL status: OK in 0.390 seconds
+[0m16:42:49.596816 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:42:49.597905 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:42:49.598762 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\porto-data-engineer_1\dbt_project.yml> not found
+
+[0m16:42:49.599627 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:42:49.601197 [debug] [MainThread]: Command `dbt debug` failed at 16:42:49.600958 after 3.40 seconds
+[0m16:42:49.601760 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:42:49.602684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001723A28D480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001723A2015B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001723A00FF00>]}
+[0m16:42:49.603618 [debug] [MainThread]: Flushing usage events
+[0m16:42:50.812117 [debug] [MainThread]: An error was encountered while trying to flush usage events
