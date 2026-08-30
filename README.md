@@ -4,7 +4,7 @@
 An end-to-end ELT data pipeline that extracts developer productivity and repository metrics from the GitHub REST API, loads semi-structured data into Google Cloud BigQuery, models the data using dbt Core under the Medallion Architecture (Star Schema), and serves analytical data marts for visualization in Looker Studio.
 
 ---
-
+```
 ## Architecture Overview
 
 ```mermaid
