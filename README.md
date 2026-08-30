@@ -128,7 +128,7 @@ Developer Contribution Footprint: Contributor distribution tracking direct code 
 ⚙️ How to Reproduce Locally
 1. Clone Repository & Setup Environment
 Bash
-git clone [[https://github.com/USERNAME/NAMA_REPO_KAMU.git](https://github.com/USERNAME/NAMA_REPO_KAMU.git](https://github.com/ChenStormtout/github-elt-pipeline-dbt-bigquery.git))
+git clone (https://github.com/ChenStormtout/github-elt-pipeline-dbt-bigquery.git)
 cd github-elt-pipeline-dbt-bigquery
 
 python -m venv .venv
