@@ -21,7 +21,6 @@ flowchart LR
     subgraph Analytics
         BQ_Gold -->|Direct Query| Looker[Looker Studio Dashboard]
     end
-
 ```
 
 ---
